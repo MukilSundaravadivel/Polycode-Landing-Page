@@ -57,53 +57,90 @@ export default function Home() {
             href="https://github.com/Waymond9056/Polycode-Extension"
             className="rounded-lg border border-gray-700 px-6 py-3 text-gray-200 font-medium hover:bg-gray-800 transition"
           >
-            Github
+            GitHub
           </Link>
         </div>
       </section>
 
-      {/* Features Section */}
       <section
         id="features"
-        className="mt-20 grid gap-12 max-w-5xl grid-cols-1 sm:grid-cols-2"
+        className="mt-20 max-w-5xl mx-auto grid gap-16"
       >
-        <div>
-          <h2 className="text-2xl font-semibold text-teal-400">
-            Real-Time Collaboration
-          </h2>
-          <p className="mt-2 text-gray-400">
-            Work side by side in the same editor — instant sharing, zero setup
-            friction.
-          </p>
+        {/* First group of 2 features */}
+        <div className="flex flex-col sm:flex-row items-start gap-8">
+          {/* Large image on the left */}
+          <div className="flex-shrink-0 sm:w-1/2 h-80 bg-gray-800 rounded-lg overflow-hidden">
+            <Image
+              src="/polycode-ui.png" // replace with your large image
+              alt="Features 1 and 2"
+              width={600}
+              height={200}
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Features stacked on the right */}
+          <div className="mt-8 flex flex-col justify-between gap-8 sm:w-1/2">
+            <div>
+              <h2 className="text-2xl font-semibold text-teal-400">
+                Real-Time Collaboration
+              </h2>
+              <p className="mt-2 text-gray-400">
+                Work side by side in the same editor — instant sharing, zero setup
+                friction.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-indigo-400">
+                Seamless Integration
+              </h2>
+              <p className="mt-2 text-gray-400">
+                Built directly into VS Code, so you can stay focused on writing
+                code.
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-semibold text-indigo-400">
-            Seamless Integration
-          </h2>
-          <p className="mt-2 text-gray-400">
-            Built directly into VS Code, so you can stay focused on writing
-            code.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold text-violet-400">
-            Secure by Design
-          </h2>
-          <p className="mt-2 text-gray-400">
-            Collaboration without compromise — encrypted, private, and
-            dependable.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold text-emerald-400">
-            Developer Friendly
-          </h2>
-          <p className="mt-2 text-gray-400">
-            Lightweight, fast, and distraction-free — designed for developers,
-            not overhead.
-          </p>
+
+        {/* Second group of 2 features */}
+        <div className="flex flex-col sm:flex-row items-start gap-8">
+
+          {/* Features stacked on the left */}
+          <div className="mt-8 flex flex-col justify-between gap-8 sm:w-1/2">
+            <div>
+              <h2 className="text-2xl font-semibold text-violet-400">
+                Secure by Design
+              </h2>
+              <p className="mt-2 text-gray-400">
+                Collaboration without compromise — encrypted, private, and
+                dependable.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold text-emerald-400">
+                Developer Friendly
+              </h2>
+              <p className="mt-2 text-gray-400">
+                Lightweight, fast, and distraction-free — designed for developers,
+                not overhead.
+              </p>
+            </div>
+          </div>
+          {/* Large image on the right */}
+          <div className="flex-shrink-0 sm:w-1/2 h-80 bg-gray-800 rounded-lg overflow-hidden">
+            <Image
+              src="/polycode-settings.png" // replace with your large image
+              alt="Features 3 and 4"
+              width={600}
+              height={320}
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section
