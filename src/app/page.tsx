@@ -48,16 +48,16 @@ export default function Home() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Link
-            href="#get-started"
+            href="https://marketplace.visualstudio.com/items?itemName=Waymond9056.polycode"
             className="rounded-lg bg-indigo-500 px-6 py-3 text-white font-medium hover:bg-indigo-600 transition"
           >
             Get Started
           </Link>
           <Link
-            href="#features"
+            href="https://github.com/Waymond9056/Polycode-Extension"
             className="rounded-lg border border-gray-700 px-6 py-3 text-gray-200 font-medium hover:bg-gray-800 transition"
           >
-            Learn More
+            Github
           </Link>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function Home() {
           can be.
         </p>
         <Link
-          href="/download"
+          href="https://marketplace.visualstudio.com/items?itemName=Waymond9056.polycode"
           className="mt-8 inline-block rounded-lg bg-indigo-500 px-6 py-3 text-white font-medium hover:bg-indigo-600 transition"
         >
           Download Extension
