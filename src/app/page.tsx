@@ -129,11 +129,11 @@ export default function Home() {
             </div>
           </div>
           {/* Large image on the right */}
-          <div className="flex-shrink-0 sm:w-1/2 h-80 bg-gray-800 rounded-lg overflow-hidden">
+          <div className="flex-shrink-0 sm:w-1/2 h-70 bg-gray-800 rounded-lg overflow-hidden">
             <Image
               src="/polycode-settings.png" // replace with your large image
               alt="Features 3 and 4"
-              width={600}
+              width={500}
               height={320}
               className="object-cover w-full h-full"
             />
